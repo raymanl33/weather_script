@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+curl https://wttr.in > "weather_today"

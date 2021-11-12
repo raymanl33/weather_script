@@ -1,0 +1,14 @@
+
+[Unit]
+Description=<This unit file will run the weather script everyday on boot after 2 min and again every day while the system is running>
+
+
+[Timer]
+Unit=weather.service
+OnBootSec=2min
+OnUnitActiveSec=1d
+
+
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=<This unit file will run the weather script when started>
+
+[Service]
+User=vagrant
+WorkingDirectory=/home/vagrant/Documents/week10
+ExecStart=/bin/bash weather
+Restart=Always
+
+
+[Install]
+WantedBy=multi-user.target
